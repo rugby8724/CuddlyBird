@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load bootstrap4 %}
+
+{% block content %}
+<body data-spy='scroll' data-target='#navbarResponsive'>
+<div id="home">
+    <!-- Navigation -->
+    {% include '_navbar.html' %}
+    <!-- End Navigation -->
+    <!-- Start Landing Page Image  -->
+    <div class="landing">
+    <div class="home-wrap">
+    <div class="home-inner">
+
+    </div>
+    </div>
+    </div><!-- End Landing Page Image -->
+    <!-- Start of Landing Page Caption -->
+    <div class="caption text-center">
+    <video src="{% static '/videos/cuddlevid.mp4' %}"
+           autoplay muted controls>
+    </video>
+</div>
+</div>
+<!-- Start Purchase Section -->
+<div id="purchase" class="offset">
+<div class="fixed-background">
+<div class="light">
+    <div class="text-center">
+        <h1 class="colors">Get your Cuddly Bird Below</h1>
+    </div>
+    <div class="row padding">
+        <div class="col-sm-12 col-md-6">
+        <div class="products text-center">
+
+            <img src="{% static '/img/yellow.png' %}" alt="yellow cuddlybird">
+            <br>
+            <h3 id="yellow" class='colors'>Canary Yellow</h3>
+            <span><a href="#" class="fa-layers fa-4x"><i class="fab fa-ebay"></i></a></span>
+            <span><a href="#" class="fa-layers fa-3x"><i class="fab fa-amazon"></i></a></span>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+        <div class="products text-center">
+            <img src="{% static '/img/blue.png' %}" alt="blue cuddlybird">
+            <br>
+            <h3 id="blue" class='colors'>Tiffany Blue</h3>
+            <span><a href="#" class="fa-layers fa-4x"><i class="fab fa-ebay"></i></a></span>
+            <span><a href="#" class="fa-layers fa-3x"><i class="fab fa-amazon"></i></a></span>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+        <div class="products text-center">
+            <img src="{% static '/img/purple.png' %}" alt="purple cuddlybird">
+            <br>
+            <h3 id="purple" class='colors'>Royal Purple</h3>
+            <span><a href="#" class="fa-layers fa-4x"><i class="fab fa-ebay"></i></a></span>
+            <span><a href="#" class="fa-layers fa-3x"><i class="fab fa-amazon"></i></a></span>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+        <div class="products text-center">
+            <img src="{% static '/img/pink.png' %}" alt="pink cuddlybird">
+            <br>
+            <h3 id="pink" class='colors'>Cherry Blossom</h3>
+            <span><a href="#" class="fa-layers fa-4x"><i class="fab fa-ebay"></i></a></span>
+            <span><a href="#" class="fa-layers fa-3x"><i class="fab fa-amazon"></i></a></span>
+        </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <h2>For large orders you may <a href="#contact">Contact Cuddly Bird Here</a></h2>
+    </div>
+
+    <div class="fixed-wrap">
+        <div id="fixed-2">
+        </div>
+    </div>
+
+</div>
+</div>
+</div><!-- End of Purchase Section -->
+<!-- Start of Details Section -->
+<div id="details" class="offset">
+<div class="fixed-background">
+<div class="light">
+<div class="row padding">
+    <div class="text-center col-lg-6 col-sm-12">
+        <img class="detail_img" src="{% static '/img/details2.jpg' %}" alt="details img1">
+
+    </div>
+    <div class="text-center col-lg-6 col-sm-12">
+        <img class="detail_img" src="{% static '/img/details.jpg' %}" alt="details img2">
+
+    </div>
+</div>
+</div>
+    <div class="fixed-wrap">
+        <div id="fixed-3">
+        </div>
+    </div>
+
+</div>
+</div><!-- End of Details Section -->
+<!-- Start of Contact Section -->
+<div id="contact">
+    <div class="fixed-background">
+    <div class="light">
+    <div class="container">
+        <h1 class="text-center">Contact Cuddly Bird Support</h1>
+        <form class="contact_form" method="Post">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <div class="form-actions col text-center">
+                <input class="btn btn-success btn-block" type="submit" value="Submit">
+            </div>
+
+        </form>
+        </div>
+        </div>
+        <div class="fixed-wrap">
+            <div id="fixed-4">
+            </div>
+        </div>
+    </div>
+
+</div><!-- End of Contact Section -->
+</body>
+
+{% endblock %}

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family:'Lato', sans-serif;
+    background-color: #a39f96;
+    color: #86868a;
+}
+/*============ NAVIGATION =============*/
+.offset::before {
+    height: 4rem;
+    margin-top: -4rem;
+    content: "";
+    display: block;
+}
+
+/* Extra Bootstrap Column Padding */
+[class*="col-"]{
+    padding: 1rem;
+}
+
+.navbar-brand img {
+    height: 3rem;
+    width: 6rem;
+}
+
+.navbar {
+    padding: .7rem 2rem;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    transition: background-color .5s ease 0s;
+}
+
+.svg-inline--fa.fa-w-14 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.navbar-nav li {
+    padding-right: .8rem;
+}
+
+.nav-link{
+    color: #86868a;
+    padding-top: .8rem;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #1ebba3;
+}
+
+.navbar.solid {
+  background: rgba(0, 0, 0, 0.7)!important;
+  transition: background-color 1s ease 0s;
+
+}
+
+.nav-link.lighten{
+    color: white!important;
+}
+
+/*============ LANDING PAGE =============*/
+.home-inner {
+    background-image: url('/static/img/landingback.jpg');
+}
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 12%;
+    z-index: 1;
+}
+
+video {
+    width: 70%;
+    height: 40%;
+}
+
+
+/*============ PURCHASE =============*/
+#fixed-2{
+  background-image: url(/static/img/purback.jpg);
+  z-index: -1;
+}
+
+#purchase{
+ font-family: 'Roboto', sans-serif;
+ text-decoration: underline;
+ text-decoration-color: #86868a;
+}
+
+.light{
+  background-color: rgba(255, 255, 255, 0.65);
+  padding: 3rem 2rem 2rem;
+  z-index: 1000!important;
+}
+
+
+.row.padding {
+  padding: 2rem 2rem 2rem 1rem;
+
+}
+
+.colors {
+    font-size: 2rem;
+
+}
+
+/* #yellow{
+    color: #d1c92c;
+}
+
+#blue{
+    color: #0abab5;
+}
+
+#purple{
+    color: #7851a9;
+}
+
+#pink{
+    color: #ed39c6;
+} */
+
+img{
+    width: 60%;
+    height: 75%;
+}
+
+/*============ Details =============*/
+
+#fixed-3{
+  background-image: url(/static/img/detailfixed.jpg);
+  z-index: -1;
+}
+
+.detail_img{
+    width: 100%;
+    height: 100%;
+}
+
+/*============ Contact =============*/
+#fixed-4{
+  background-image: url(/static/img/contactbg.jpg);
+  z-index: -1;
+}

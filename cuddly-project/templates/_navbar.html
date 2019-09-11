@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<nav class="navbar navbar-expand-md fixed-top">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="{% static '/img/cuddlebrand.png' %}" alt="Cuddly Logo"></a>
+    <button class="navbar-toggler" type="button" name="button" data-toggle='collapse'
+    data-target='#navbarResponsive' aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="custom-toggler-icon" ><i class="fas fa-bars"></i></span>
+    </button>
+
+
+    <div id='navbarResponsive' class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#purchase">Purchase</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#details">Cuddly Bird Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</nav>

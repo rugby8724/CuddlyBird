@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<body id="thanks" class="light" data-spy='scroll'  data-target='#navbarResponsive'>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="text-center min-vh-100  m-0 d-flex flex-column justify-content-center">
+                    <h1 class="display-4">Thanks, The Cuddly Bird staff will receive your message soon!</h1>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-md" href="{% url 'home' %}" role="button">Cuddly Bird Home</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
