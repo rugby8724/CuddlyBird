@@ -20,14 +20,14 @@ body {
 }
 
 .navbar-brand img {
-    height: 3rem;
-    width: 6rem;
+    height: 5%;
+    width: 15%;
 }
 
 .navbar {
     padding: .7rem 2rem;
     text-transform: uppercase;
-    font-size: .9rem;
+    font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: .1rem;
     transition: background-color .5s ease 0s;
@@ -43,7 +43,7 @@ body {
     padding-right: .8rem;
 }
 
-.nav-link{
+.navbar-nav .nav-link{
     color: #86868a;
     padding-top: .8rem;
 }
@@ -72,7 +72,7 @@ body {
     width: 100%;
     max-width: 100%;
     position: absolute;
-    top: 12%;
+    top: 15%;
     z-index: 1;
 }
 
@@ -81,6 +81,31 @@ video {
     height: 40%;
 }
 
+@media only screen and (max-width: 767px) {
+    /* phones */
+    .caption {
+        top: 30%;
+    }
+
+    video {
+        width: 80%;
+        height: 100%%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    .caption {
+        top: 30%;
+    }
+
+    video {
+        width: 80%;
+        height: 100%%;
+    }
+}
+
+/* @media only screen and (min-width: 767px) and (max-width: 1024px)  */
 
 /*============ PURCHASE =============*/
 #fixed-2{

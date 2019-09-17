@@ -19,7 +19,7 @@ def homePage(request):
             # Email Test
             mail_sub = 'Cuddly Bird: ' + subject +"."
             from_email = settings.DEFAULT_FROM_EMAIL
-            to_email = ['jeremiah.d.wise@gmail.com','laluu.hu@gmail.com']
+            to_email = ['jeremiah.d.wise@gmail.com','laluu.hu@gmail.com', 'cuddlybirdusa@gmail.com']
 
 
             contact_message = f'{subject},\n {message}\n\n from {form_email}'

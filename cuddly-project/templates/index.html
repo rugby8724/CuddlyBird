@@ -3,7 +3,7 @@
 {% load bootstrap4 %}
 
 {% block content %}
-<body data-spy='scroll' data-target='#navbarResponsive'>
+<body  data-target='#navbarResponsive'>
 <div id="home">
     <!-- Navigation -->
     {% include '_navbar.html' %}
@@ -22,6 +22,13 @@
            autoplay muted controls>
     </video>
 </div>
+<!-- Bouncing Down Arrow -->
+    <a class="down-arrow" href="#purchase">
+        <div class="arrow bounce d-none d-md-block">
+            <i class="fas fa-angle-down" aria-hidden='true'></i>
+        </div>
+    </a>
+<!-- End of Bouncing Down Arrow -->
 </div>
 <!-- Start Purchase Section -->
 <div id="purchase" class="offset">
